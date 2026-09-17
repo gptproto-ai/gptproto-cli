@@ -1,0 +1,6 @@
+{
+  "model": "provider/model",
+  "prompt": "A short cinematic scene",
+  "duration": 5,
+  "aspect_ratio": "16:9"
+}

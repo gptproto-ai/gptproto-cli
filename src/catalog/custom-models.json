@@ -1,0 +1,3313 @@
+{
+  "source": "https://gptproto.com/api/home-model-catalog?language=en",
+  "source_language": "en",
+  "fetched_at": "2026-09-14T12:18:26.988Z",
+  "count": 231,
+  "models": [
+    {
+      "id": 570,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-fable-5/text-to-text",
+      "custom_model": "claude/claude-fable-5/text-to-text",
+      "model_name": "claude-fable-5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Claude Fable 5",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 317,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-haiku-4-5-20251001/text-to-text",
+      "custom_model": "claude/claude-haiku-4-5-20251001/text-to-text",
+      "model_name": "claude-haiku-4-5-20251001/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Haiku 4.5 (Build 20251001)",
+      "max_input_tokens": 200000,
+      "context_label": "200K"
+    },
+    {
+      "id": 490,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-6-thinking/text-to-text",
+      "custom_model": "claude/claude-opus-4-6-thinking/text-to-text",
+      "model_name": "claude-opus-4-6-thinking/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Opus 4.6 Thinking",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 601,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-5/text-to-text",
+      "custom_model": "claude/claude-opus-5/text-to-text",
+      "model_name": "claude-opus-5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Claude Opus 5",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 483,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-sonnet-4-6/text-to-text",
+      "custom_model": "claude/claude-sonnet-4-6/text-to-text",
+      "model_name": "claude-sonnet-4-6/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Sonnet 4.6",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 577,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-sonnet-5/text-to-text",
+      "custom_model": "claude/claude-sonnet-5/text-to-text",
+      "model_name": "claude-sonnet-5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Claude Sonnet 5",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 265,
+      "provider": "deepseek",
+      "provider_name": "DeepSeek",
+      "model": "deepseek-r1/text-to-text",
+      "custom_model": "deepseek/deepseek-r1/text-to-text",
+      "model_name": "deepseek-r1/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "DeepSeek R1",
+      "max_input_tokens": 64000,
+      "context_label": "64K"
+    },
+    {
+      "id": 268,
+      "provider": "deepseek",
+      "provider_name": "DeepSeek",
+      "model": "deepseek-v3/text-to-text",
+      "custom_model": "deepseek/deepseek-v3/text-to-text",
+      "model_name": "deepseek-v3/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "DeepSeek v3"
+    },
+    {
+      "id": 534,
+      "provider": "deepseek",
+      "provider_name": "DeepSeek",
+      "model": "deepseek-v4-flash/text-to-text",
+      "custom_model": "deepseek/deepseek-v4-flash/text-to-text",
+      "model_name": "deepseek-v4-flash/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "DeepSeek v4 Flash",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 585,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "dola-seedream-5-0-pro-260628/text-to-image",
+      "custom_model": "doubao/dola-seedream-5-0-pro-260628/text-to-image",
+      "model_name": "dola-seedream-5-0-pro-260628/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Seedream 5.0 Pro (Build 260628)"
+    },
+    {
+      "id": 485,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seedream-5-0-260128/text-to-image",
+      "custom_model": "doubao/doubao-seedream-5-0-260128/text-to-image",
+      "model_name": "doubao-seedream-5-0-260128/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Doubao Seedream 5.0 (Build 260128)"
+    },
+    {
+      "id": 515,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "dreamina-seedance-2-0-260128/text-to-video",
+      "custom_model": "doubao/dreamina-seedance-2-0-260128/text-to-video",
+      "model_name": "dreamina-seedance-2-0-260128/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Seedance 2.0 (Build 260128)"
+    },
+    {
+      "id": 516,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "dreamina-seedance-2-0-fast-260128/text-to-video",
+      "custom_model": "doubao/dreamina-seedance-2-0-fast-260128/text-to-video",
+      "model_name": "dreamina-seedance-2-0-fast-260128/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Seedance 2.0 Fast (Build 260128)"
+    },
+    {
+      "id": 574,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "dreamina-seedance-2-0-mini-260615/text-to-video",
+      "custom_model": "doubao/dreamina-seedance-2-0-mini-260615/text-to-video",
+      "model_name": "dreamina-seedance-2-0-mini-260615/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Seedance 2.0 Mini (Build 260615)"
+    },
+    {
+      "id": 605,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "dreamina-seedance-2-5-260628/text-to-video",
+      "custom_model": "doubao/dreamina-seedance-2-5-260628/text-to-video",
+      "model_name": "dreamina-seedance-2-5-260628/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Seedance 2.5 (Build 260628)"
+    },
+    {
+      "id": 223,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-2.5-flash/text-to-text",
+      "custom_model": "google/gemini-2.5-flash/text-to-text",
+      "model_name": "gemini-2.5-flash/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis"
+      ],
+      "alias": "Gemini 2.5 Flash",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 234,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-2.5-pro/text-to-text",
+      "custom_model": "google/gemini-2.5-pro/text-to-text",
+      "model_name": "gemini-2.5-pro/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis"
+      ],
+      "alias": "Gemini 2.5 Pro",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 415,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3-flash-preview/text-to-text",
+      "custom_model": "google/gemini-3-flash-preview/text-to-text",
+      "model_name": "gemini-3-flash-preview/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Gemini 3 Flash Preview",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 379,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3-pro-image-preview/text-to-image",
+      "custom_model": "google/gemini-3-pro-image-preview/text-to-image",
+      "model_name": "gemini-3-pro-image-preview/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Nano Banana Pro (Gemini 3 Pro Image)"
+    },
+    {
+      "id": 493,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.1-flash-image-preview/text-to-image",
+      "custom_model": "google/gemini-3.1-flash-image-preview/text-to-image",
+      "model_name": "gemini-3.1-flash-image-preview/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Nano Banana 2 (Gemini 3.1 Flash Image)"
+    },
+    {
+      "id": 578,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.1-flash-lite-image/text-to-image",
+      "custom_model": "google/gemini-3.1-flash-lite-image/text-to-image",
+      "model_name": "gemini-3.1-flash-lite-image/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Nano Banana 2 Lite (Gemini 3.1 Flash-Lite Image)"
+    },
+    {
+      "id": 495,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.1-flash-lite-preview/text-to-text",
+      "custom_model": "google/gemini-3.1-flash-lite-preview/text-to-text",
+      "model_name": "gemini-3.1-flash-lite-preview/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Gemini 3.1 Flash Lite Preview",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 484,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.1-pro-preview/text-to-text",
+      "custom_model": "google/gemini-3.1-pro-preview/text-to-text",
+      "model_name": "gemini-3.1-pro-preview/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Gemini 3.1 Pro Preview",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 597,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.5-flash-lite/text-to-text",
+      "custom_model": "google/gemini-3.5-flash-lite/text-to-text",
+      "model_name": "gemini-3.5-flash-lite/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Gemini 3.5 Flash Lite",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 607,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.7-flash/text-to-text",
+      "custom_model": "google/gemini-3.7-flash/text-to-text",
+      "model_name": "gemini-3.7-flash/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Gemini 3.7 Flash",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 506,
+      "provider": "z-ai",
+      "provider_name": "Z-AI",
+      "model": "glm-5.1/text-to-text",
+      "custom_model": "z-ai/glm-5.1/text-to-text",
+      "model_name": "glm-5.1/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GLM 5.1",
+      "max_input_tokens": 204800,
+      "context_label": "205K"
+    },
+    {
+      "id": 573,
+      "provider": "z-ai",
+      "provider_name": "Z-AI",
+      "model": "glm-5.2/text-to-text",
+      "custom_model": "z-ai/glm-5.2/text-to-text",
+      "model_name": "glm-5.2/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GLM 5.2",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 468,
+      "provider": "z-ai",
+      "provider_name": "Z-AI",
+      "model": "glm-5/text-to-text",
+      "custom_model": "z-ai/glm-5/text-to-text",
+      "model_name": "glm-5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GLM 5",
+      "max_input_tokens": 204800,
+      "context_label": "205K"
+    },
+    {
+      "id": 447,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1-mini-2025-04-14/text-to-text",
+      "custom_model": "openai/gpt-4.1-mini-2025-04-14/text-to-text",
+      "model_name": "gpt-4.1-mini-2025-04-14/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 4.1 Mini (Build 2025-04-14)",
+      "max_input_tokens": 1047576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 83,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1-mini/text-to-text",
+      "custom_model": "openai/gpt-4.1-mini/text-to-text",
+      "model_name": "gpt-4.1-mini/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 4.1 Mini",
+      "max_input_tokens": 1047576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 85,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1-nano/text-to-text",
+      "custom_model": "openai/gpt-4.1-nano/text-to-text",
+      "model_name": "gpt-4.1-nano/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis"
+      ],
+      "alias": "GPT 4.1 Nano",
+      "max_input_tokens": 1047576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 256,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o-mini/text-to-text",
+      "custom_model": "openai/gpt-4o-mini/text-to-text",
+      "model_name": "gpt-4o-mini/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "GPT 4o Mini",
+      "max_input_tokens": 128000,
+      "context_label": "128K"
+    },
+    {
+      "id": 62,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o/text-to-text",
+      "custom_model": "openai/gpt-4o/text-to-text",
+      "model_name": "gpt-4o/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 4o",
+      "max_input_tokens": 128000,
+      "context_label": "128K"
+    },
+    {
+      "id": 407,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2/text-to-text",
+      "custom_model": "openai/gpt-5.2/text-to-text",
+      "model_name": "gpt-5.2/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "GPT 5.2",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 499,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-mini/text-to-text",
+      "custom_model": "openai/gpt-5.4-mini/text-to-text",
+      "model_name": "gpt-5.4-mini/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.4 Mini",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 529,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.5/text-to-text",
+      "custom_model": "openai/gpt-5.5/text-to-text",
+      "model_name": "gpt-5.5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.5",
+      "max_input_tokens": 1050000,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 592,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-luna/text-to-text",
+      "custom_model": "openai/gpt-5.6-luna/text-to-text",
+      "model_name": "gpt-5.6-luna/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.6 Luna",
+      "max_input_tokens": 1050000,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 587,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-terra/text-to-text",
+      "custom_model": "openai/gpt-5.6-terra/text-to-text",
+      "model_name": "gpt-5.6-terra/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.6 Terra",
+      "max_input_tokens": 1050000,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 526,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-image-2/text-to-image",
+      "custom_model": "openai/gpt-image-2/text-to-image",
+      "model_name": "gpt-image-2/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "GPT Image 2"
+    },
+    {
+      "id": 209,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-3-mini/text-to-text",
+      "custom_model": "grok/grok-3-mini/text-to-text",
+      "model_name": "grok-3-mini/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Grok 3 Mini"
+    },
+    {
+      "id": 422,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4-0709/text-to-text",
+      "custom_model": "grok/grok-4-0709/text-to-text",
+      "model_name": "grok-4-0709/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4 0709"
+    },
+    {
+      "id": 383,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4-1-fast-non-reasoning/text-to-text",
+      "custom_model": "grok/grok-4-1-fast-non-reasoning/text-to-text",
+      "model_name": "grok-4-1-fast-non-reasoning/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4.1 Fast Non Reasoning"
+    },
+    {
+      "id": 382,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4-1-fast-reasoning/text-to-text",
+      "custom_model": "grok/grok-4-1-fast-reasoning/text-to-text",
+      "model_name": "grok-4-1-fast-reasoning/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4.1 Fast Reasoning"
+    },
+    {
+      "id": 532,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4.3/text-to-text",
+      "custom_model": "grok/grok-4.3/text-to-text",
+      "model_name": "grok-4.3/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4.3",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 582,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4.5/text-to-text",
+      "custom_model": "grok/grok-4.5/text-to-text",
+      "model_name": "grok-4.5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4.5",
+      "max_input_tokens": 500000,
+      "context_label": "500K"
+    },
+    {
+      "id": 606,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4.6/text-to-text",
+      "custom_model": "grok/grok-4.6/text-to-text",
+      "model_name": "grok-4.6/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4.6",
+      "max_input_tokens": 500000,
+      "context_label": "500K"
+    },
+    {
+      "id": 230,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4/text-to-text",
+      "custom_model": "grok/grok-4/text-to-text",
+      "model_name": "grok-4/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4"
+    },
+    {
+      "id": 34,
+      "provider": "midjourney",
+      "provider_name": "Midjourney",
+      "model": "Midjourney/text-to-image",
+      "custom_model": "midjourney/Midjourney/text-to-image",
+      "model_name": "Midjourney/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-to-image"
+      ],
+      "alias": "Midjourney"
+    },
+    {
+      "id": 576,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "MiniMax-M3/text-to-text",
+      "custom_model": "minimax/MiniMax-M3/text-to-text",
+      "model_name": "MiniMax-M3/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "MiniMax M3",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 417,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "seedance-1-5-pro-251215/text-to-video",
+      "custom_model": "doubao/seedance-1-5-pro-251215/text-to-video",
+      "model_name": "seedance-1-5-pro-251215/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Seedance 1.5 Pro (Build 251215)"
+    },
+    {
+      "id": 616,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-6-astra/text-to-text",
+      "custom_model": "openai/gpt-6-astra/text-to-text",
+      "model_name": "gpt-6-astra/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "max_input_tokens": 1050000,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 617,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-imagine-image-2.0/text-to-image",
+      "custom_model": "grok/grok-imagine-image-2.0/text-to-image",
+      "model_name": "grok-imagine-image-2.0/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ]
+    },
+    {
+      "id": 615,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.8-flash/text-to-text",
+      "custom_model": "google/gemini-3.8-flash/text-to-text",
+      "model_name": "gemini-3.8-flash/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "video-to-text",
+        "audio-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 614,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-fable-5-1/text-to-text",
+      "custom_model": "claude/claude-fable-5-1/text-to-text",
+      "model_name": "claude-fable-5-1/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 613,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen3.8-max-0902/text-to-text",
+      "custom_model": "alibaba/qwen3.8-max-0902/text-to-text",
+      "model_name": "qwen3.8-max-0902/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "video-to-text",
+        "audio-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 611,
+      "provider": "z-ai",
+      "provider_name": "Z-AI",
+      "model": "glm-5.3-flash/text-to-text",
+      "custom_model": "z-ai/glm-5.3-flash/text-to-text",
+      "model_name": "glm-5.3-flash/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis",
+        "video-to-text"
+      ],
+      "max_input_tokens": 1310720,
+      "context_label": "1.31M"
+    },
+    {
+      "id": 610,
+      "provider": "deepseek",
+      "provider_name": "DeepSeek",
+      "model": "deepseek-v4-flash-vision-exp/text-to-text",
+      "custom_model": "deepseek/deepseek-v4-flash-vision-exp/text-to-text",
+      "model_name": "deepseek-v4-flash-vision-exp/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 609,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "wan-3.0/text-to-video",
+      "custom_model": "alibaba/wan-3.0/text-to-video",
+      "model_name": "wan-3.0/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ]
+    },
+    {
+      "id": 608,
+      "provider": "z-ai",
+      "provider_name": "Z-AI",
+      "model": "glm-5.3/text-to-text",
+      "custom_model": "z-ai/glm-5.3/text-to-text",
+      "model_name": "glm-5.3/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GLM 5.3",
+      "max_input_tokens": 1310720,
+      "context_label": "1.31M"
+    },
+    {
+      "id": 604,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen3.8-max/text-to-text",
+      "custom_model": "alibaba/qwen3.8-max/text-to-text",
+      "model_name": "qwen3.8-max/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "video-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Qwen3.8 Max",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 599,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.6-flash/text-to-text",
+      "custom_model": "google/gemini-3.6-flash/text-to-text",
+      "model_name": "gemini-3.6-flash/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Gemini 3.6 Flash",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 594,
+      "provider": "moonshotai",
+      "provider_name": "MoonshotAI",
+      "model": "kimi-k3/text-to-text",
+      "custom_model": "moonshotai/kimi-k3/text-to-text",
+      "model_name": "kimi-k3/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Kimi K3",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 586,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.6-sol/text-to-text",
+      "custom_model": "openai/gpt-5.6-sol/text-to-text",
+      "model_name": "gpt-5.6-sol/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.6 Sol",
+      "max_input_tokens": 1050000,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 575,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v3.0-4k/text-to-video",
+      "custom_model": "kling/kling-v3.0-4k/text-to-video",
+      "model_name": "kling-v3.0-4k/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Kling v3.0 4K"
+    },
+    {
+      "id": 572,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v3-omni-4k/text-to-video",
+      "custom_model": "kling/kling-v3-omni-4k/text-to-video",
+      "model_name": "kling-v3-omni-4k/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "video-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Kling v3 Omni 4K"
+    },
+    {
+      "id": 571,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.1-chat-latest/text-to-text",
+      "custom_model": "openai/gpt-5.1-chat-latest/text-to-text",
+      "model_name": "gpt-5.1-chat-latest/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.1 Chat Latest"
+    },
+    {
+      "id": 569,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen3.7-max/text-to-text",
+      "custom_model": "alibaba/qwen3.7-max/text-to-text",
+      "model_name": "qwen3.7-max/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Qwen3.7 Max",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 565,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-8-thinking/text-to-text",
+      "custom_model": "claude/claude-opus-4-8-thinking/text-to-text",
+      "model_name": "claude-opus-4-8-thinking/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Claude Opus 4.8 Thinking",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 564,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-8/text-to-text",
+      "custom_model": "claude/claude-opus-4-8/text-to-text",
+      "model_name": "claude-opus-4-8/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Claude Opus 4.8",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 567,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.1-flash-image/text-to-image",
+      "custom_model": "google/gemini-3.1-flash-image/text-to-image",
+      "model_name": "gemini-3.1-flash-image/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Nano Banana 2 (Gemini 3.1 Flash Image)"
+    },
+    {
+      "id": 535,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3.5-flash/text-to-text",
+      "custom_model": "google/gemini-3.5-flash/text-to-text",
+      "model_name": "gemini-3.5-flash/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Gemini 3.5 Flash",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 533,
+      "provider": "deepseek",
+      "provider_name": "DeepSeek",
+      "model": "deepseek-v4-pro/text-to-text",
+      "custom_model": "deepseek/deepseek-v4-pro/text-to-text",
+      "model_name": "deepseek-v4-pro/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "DeepSeek v4 Pro",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 531,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-pro/text-to-text",
+      "custom_model": "openai/gpt-5.4-pro/text-to-text",
+      "model_name": "gpt-5.4-pro/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.4 Pro",
+      "max_input_tokens": 1050000,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 530,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.5-pro/text-to-text",
+      "custom_model": "openai/gpt-5.5-pro/text-to-text",
+      "model_name": "gpt-5.5-pro/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.5 Pro",
+      "max_input_tokens": 1050000,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 527,
+      "provider": "moonshotai",
+      "provider_name": "MoonshotAI",
+      "model": "kimi-k2.6/text-to-text",
+      "custom_model": "moonshotai/kimi-k2.6/text-to-text",
+      "model_name": "kimi-k2.6/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Kimi K2.6",
+      "max_input_tokens": 262144,
+      "context_label": "262K"
+    },
+    {
+      "id": 522,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-7-thinking/text-to-text",
+      "custom_model": "claude/claude-opus-4-7-thinking/text-to-text",
+      "model_name": "claude-opus-4-7-thinking/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Claude Opus 4.7 Thinking",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 521,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-7/text-to-text",
+      "custom_model": "claude/claude-opus-4-7/text-to-text",
+      "model_name": "claude-opus-4-7/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Claude Opus 4.7",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 512,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seedance-2-0-260128/text-to-video",
+      "custom_model": "doubao/doubao-seedance-2-0-260128/text-to-video",
+      "model_name": "doubao-seedance-2-0-260128/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Doubao Seedance 2.0 (Build 260128)"
+    },
+    {
+      "id": 511,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seedance-2-0-fast-260128/text-to-video",
+      "custom_model": "doubao/doubao-seedance-2-0-fast-260128/text-to-video",
+      "model_name": "doubao-seedance-2-0-fast-260128/text-to-video",
+      "tags": [
+        "text-to-video",
+        "reference-to-video",
+        "image-to-video"
+      ],
+      "alias": "Doubao Seedance 2.0 Fast (Build 260128)"
+    },
+    {
+      "id": 513,
+      "provider": "vidu",
+      "provider_name": "Vidu",
+      "model": "vidu2.0/image-to-video",
+      "custom_model": "vidu/vidu2.0/image-to-video",
+      "model_name": "vidu2.0/image-to-video",
+      "tags": [
+        "image-to-video",
+        "reference-to-video",
+        "start-end-frame"
+      ],
+      "alias": "Vidu 2.0"
+    },
+    {
+      "id": 508,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4.20-beta-0309-non-reasoning/text-to-text",
+      "custom_model": "grok/grok-4.20-beta-0309-non-reasoning/text-to-text",
+      "model_name": "grok-4.20-beta-0309-non-reasoning/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4.20 Beta 0309 Non Reasoning",
+      "max_input_tokens": 2000000,
+      "context_label": "2M"
+    },
+    {
+      "id": 509,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4.20-beta-0309-reasoning/text-to-text",
+      "custom_model": "grok/grok-4.20-beta-0309-reasoning/text-to-text",
+      "model_name": "grok-4.20-beta-0309-reasoning/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4.20 Beta 0309 Reasoning",
+      "max_input_tokens": 2000000,
+      "context_label": "2M"
+    },
+    {
+      "id": 507,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4.20-multi-agent-beta-0309/text-to-text",
+      "custom_model": "grok/grok-4.20-multi-agent-beta-0309/text-to-text",
+      "model_name": "grok-4.20-multi-agent-beta-0309/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Grok 4.20 Multi Agent Beta 0309",
+      "max_input_tokens": 2000000,
+      "context_label": "2M"
+    },
+    {
+      "id": 503,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v3-omni-pro/text-to-video",
+      "custom_model": "kling/kling-v3-omni-pro/text-to-video",
+      "model_name": "kling-v3-omni-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video",
+        "video-to-video"
+      ],
+      "alias": "Kling v3 Omni Pro"
+    },
+    {
+      "id": 502,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v3-omni-std/text-to-video",
+      "custom_model": "kling/kling-v3-omni-std/text-to-video",
+      "model_name": "kling-v3-omni-std/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video",
+        "video-to-video"
+      ],
+      "alias": "Kling v3 Omni Std"
+    },
+    {
+      "id": 501,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "text-embedding-ada-002/text-to-text",
+      "custom_model": "openai/text-embedding-ada-002/text-to-text",
+      "model_name": "text-embedding-ada-002/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Text Embedding Ada 002"
+    },
+    {
+      "id": 500,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4-nano/text-to-text",
+      "custom_model": "openai/gpt-5.4-nano/text-to-text",
+      "model_name": "gpt-5.4-nano/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "GPT 5.4 Nano",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 498,
+      "provider": "z-ai",
+      "provider_name": "Z-AI",
+      "model": "glm-5-turbo/text-to-text",
+      "custom_model": "z-ai/glm-5-turbo/text-to-text",
+      "model_name": "glm-5-turbo/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GLM 5 Turbo",
+      "max_input_tokens": 202752,
+      "context_label": "203K"
+    },
+    {
+      "id": 367,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "chatgpt-4o-latest/text-to-text",
+      "custom_model": "openai/chatgpt-4o-latest/text-to-text",
+      "model_name": "chatgpt-4o-latest/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "ChatGPT 4o Latest"
+    },
+    {
+      "id": 291,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-1-20250805-thinking/text-to-text",
+      "custom_model": "claude/claude-opus-4-1-20250805-thinking/text-to-text",
+      "model_name": "claude-opus-4-1-20250805-thinking/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Opus 4.1 Thinking (Build 20250805)",
+      "max_input_tokens": 200000,
+      "context_label": "200K"
+    },
+    {
+      "id": 255,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-1-20250805/text-to-text",
+      "custom_model": "claude/claude-opus-4-1-20250805/text-to-text",
+      "model_name": "claude-opus-4-1-20250805/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Opus 4.1 (Build 20250805)",
+      "max_input_tokens": 200000,
+      "context_label": "200K"
+    },
+    {
+      "id": 384,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-5-20251101/text-to-text",
+      "custom_model": "claude/claude-opus-4-5-20251101/text-to-text",
+      "model_name": "claude-opus-4-5-20251101/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Opus 4.5 (Build 20251101)",
+      "max_input_tokens": 200000,
+      "context_label": "200K"
+    },
+    {
+      "id": 458,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-opus-4-6/text-to-text",
+      "custom_model": "claude/claude-opus-4-6/text-to-text",
+      "model_name": "claude-opus-4-6/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Opus 4.6",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 195,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-sonnet-4-20250514-thinking/text-to-text",
+      "custom_model": "claude/claude-sonnet-4-20250514-thinking/text-to-text",
+      "model_name": "claude-sonnet-4-20250514-thinking/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Sonnet 4 Thinking (Build 20250514)",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 194,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-sonnet-4-20250514/text-to-text",
+      "custom_model": "claude/claude-sonnet-4-20250514/text-to-text",
+      "model_name": "claude-sonnet-4-20250514/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Sonnet 4 (Build 20250514)",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 296,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-sonnet-4-5-20250929-thinking/text-to-text",
+      "custom_model": "claude/claude-sonnet-4-5-20250929-thinking/text-to-text",
+      "model_name": "claude-sonnet-4-5-20250929-thinking/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Sonnet 4.5 Thinking (Build 20250929)",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 295,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-sonnet-4-5-20250929/text-to-text",
+      "custom_model": "claude/claude-sonnet-4-5-20250929/text-to-text",
+      "model_name": "claude-sonnet-4-5-20250929/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Claude Sonnet 4.5 (Build 20250929)",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 482,
+      "provider": "claude",
+      "provider_name": "Claude",
+      "model": "claude-sonnet-4-6-thinking/text-to-text",
+      "custom_model": "claude/claude-sonnet-4-6-thinking/text-to-text",
+      "model_name": "claude-sonnet-4-6-thinking/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "Claude Sonnet 4.6 Thinking",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 623,
+      "provider": "deepseek",
+      "provider_name": "DeepSeek",
+      "model": "deepseek-flash/text-to-text",
+      "custom_model": "deepseek/deepseek-flash/text-to-text",
+      "model_name": "deepseek-flash/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ]
+    },
+    {
+      "id": 491,
+      "provider": "deepseek",
+      "provider_name": "DeepSeek",
+      "model": "deepseek-v3.2/text-to-text",
+      "custom_model": "deepseek/deepseek-v3.2/text-to-text",
+      "model_name": "deepseek-v3.2/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "DeepSeek v3.2",
+      "max_input_tokens": 163840,
+      "context_label": "164K"
+    },
+    {
+      "id": 225,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-1-5-pro-32k-250115/text-to-text",
+      "custom_model": "doubao/doubao-1-5-pro-32k-250115/text-to-text",
+      "model_name": "doubao-1-5-pro-32k-250115/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Doubao 1.5 Pro 32K (Build 250115)"
+    },
+    {
+      "id": 224,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-1-5-vision-pro-32k-250115/text-to-text",
+      "custom_model": "doubao/doubao-1-5-vision-pro-32k-250115/text-to-text",
+      "model_name": "doubao-1-5-vision-pro-32k-250115/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Doubao 1.5 Vision Pro 32K (Build 250115)"
+    },
+    {
+      "id": 241,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seed-1-6-250615/image-to-text",
+      "custom_model": "doubao/doubao-seed-1-6-250615/image-to-text",
+      "model_name": "doubao-seed-1-6-250615/image-to-text",
+      "tags": [
+        "image-to-text",
+        "text-to-text"
+      ],
+      "alias": "Doubao Seed 1.6 (Build 250615)",
+      "max_input_tokens": 262144,
+      "context_label": "262K"
+    },
+    {
+      "id": 242,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seed-1-6-flash-250615/text-to-text",
+      "custom_model": "doubao/doubao-seed-1-6-flash-250615/text-to-text",
+      "model_name": "doubao-seed-1-6-flash-250615/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Doubao Seed 1.6 Flash (Build 250615)",
+      "max_input_tokens": 262144,
+      "context_label": "262K"
+    },
+    {
+      "id": 243,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seed-1-6-thinking-250615/text-to-text",
+      "custom_model": "doubao/doubao-seed-1-6-thinking-250615/text-to-text",
+      "model_name": "doubao-seed-1-6-thinking-250615/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Doubao Seed 1.6 Thinking (Build 250615)",
+      "max_input_tokens": 262144,
+      "context_label": "262K"
+    },
+    {
+      "id": 246,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seed-1-6-thinking-250715/text-to-text",
+      "custom_model": "doubao/doubao-seed-1-6-thinking-250715/text-to-text",
+      "model_name": "doubao-seed-1-6-thinking-250715/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Doubao Seed 1.6 Thinking (Build 250715)",
+      "max_input_tokens": 262144,
+      "context_label": "262K"
+    },
+    {
+      "id": 481,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seed-2-0-code-preview-260215/text-to-text",
+      "custom_model": "doubao/doubao-seed-2-0-code-preview-260215/text-to-text",
+      "model_name": "doubao-seed-2-0-code-preview-260215/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "Doubao Seed 2.0 Code Preview (Build 260215)",
+      "max_input_tokens": 262144,
+      "context_label": "262K"
+    },
+    {
+      "id": 418,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seedance-1-5-pro-251215/text-to-video",
+      "custom_model": "doubao/doubao-seedance-1-5-pro-251215/text-to-video",
+      "model_name": "doubao-seedance-1-5-pro-251215/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Doubao Seedance 1.5 Pro (Build 251215)"
+    },
+    {
+      "id": 274,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seedream-4-0-250828/text-to-image",
+      "custom_model": "doubao/doubao-seedream-4-0-250828/text-to-image",
+      "model_name": "doubao-seedream-4-0-250828/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Doubao Seedream 4.0 (Build 250828)"
+    },
+    {
+      "id": 387,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "doubao-seedream-4-5-251128/text-to-image",
+      "custom_model": "doubao/doubao-seedream-4-5-251128/text-to-image",
+      "model_name": "doubao-seedream-4-5-251128/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Doubao Seedream 4.5 (Build 251128)"
+    },
+    {
+      "id": 216,
+      "provider": "flux",
+      "provider_name": "Flux",
+      "model": "flux-kontext-max/image-edit",
+      "custom_model": "flux/flux-kontext-max/image-edit",
+      "model_name": "flux-kontext-max/image-edit",
+      "tags": [
+        "image-edit",
+        "text-to-image"
+      ],
+      "alias": "Flux Kontext Max"
+    },
+    {
+      "id": 215,
+      "provider": "flux",
+      "provider_name": "Flux",
+      "model": "flux-kontext-pro/image-edit",
+      "custom_model": "flux/flux-kontext-pro/image-edit",
+      "model_name": "flux-kontext-pro/image-edit",
+      "tags": [
+        "image-edit",
+        "text-to-image"
+      ],
+      "alias": "Flux Kontext Pro"
+    },
+    {
+      "id": 178,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-2.0-flash/text-to-text",
+      "custom_model": "google/gemini-2.0-flash/text-to-text",
+      "model_name": "gemini-2.0-flash/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis"
+      ],
+      "alias": "Gemini 2.0 Flash"
+    },
+    {
+      "id": 319,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-2.5-flash-image-hd/text-to-image",
+      "custom_model": "google/gemini-2.5-flash-image-hd/text-to-image",
+      "model_name": "gemini-2.5-flash-image-hd/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Gemini 2.5 Flash Image HD"
+    },
+    {
+      "id": 299,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-2.5-flash-image/text-to-image",
+      "custom_model": "google/gemini-2.5-flash-image/text-to-image",
+      "model_name": "gemini-2.5-flash-image/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Gemini 2.5 Flash Image"
+    },
+    {
+      "id": 275,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-2.5-flash-nothinking/text-to-text",
+      "custom_model": "google/gemini-2.5-flash-nothinking/text-to-text",
+      "model_name": "gemini-2.5-flash-nothinking/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis"
+      ],
+      "alias": "Gemini 2.5 Flash No Thinking",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 431,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-2.5-flash-preview-tts/text-to-audio",
+      "custom_model": "google/gemini-2.5-flash-preview-tts/text-to-audio",
+      "model_name": "gemini-2.5-flash-preview-tts/text-to-audio",
+      "tags": [
+        "text-to-audio"
+      ],
+      "alias": "Gemini 2.5 Flash Preview TTS"
+    },
+    {
+      "id": 430,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-2.5-pro-preview-tts/text-to-audio",
+      "custom_model": "google/gemini-2.5-pro-preview-tts/text-to-audio",
+      "model_name": "gemini-2.5-pro-preview-tts/text-to-audio",
+      "tags": [
+        "text-to-audio"
+      ],
+      "alias": "Gemini 2.5 Pro Preview TTS"
+    },
+    {
+      "id": 374,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "gemini-3-pro-preview/text-to-text",
+      "custom_model": "google/gemini-3-pro-preview/text-to-text",
+      "model_name": "gemini-3-pro-preview/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Gemini 3 Pro Preview",
+      "max_input_tokens": 1048576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 227,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1-2025-04-14/text-to-text",
+      "custom_model": "openai/gpt-4.1-2025-04-14/text-to-text",
+      "model_name": "gpt-4.1-2025-04-14/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 4.1 (Build 2025-04-14)",
+      "max_input_tokens": 1047576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 81,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4.1/text-to-text",
+      "custom_model": "openai/gpt-4.1/text-to-text",
+      "model_name": "gpt-4.1/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search",
+        "image-to-text"
+      ],
+      "alias": "GPT 4.1",
+      "max_input_tokens": 1047576,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 263,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o-2024-08-06/text-to-text",
+      "custom_model": "openai/gpt-4o-2024-08-06/text-to-text",
+      "model_name": "gpt-4o-2024-08-06/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 4o (Build 2024-08-06)",
+      "max_input_tokens": 128000,
+      "context_label": "128K"
+    },
+    {
+      "id": 368,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o-mini-2024-07-18/text-to-text",
+      "custom_model": "openai/gpt-4o-mini-2024-07-18/text-to-text",
+      "model_name": "gpt-4o-mini-2024-07-18/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "GPT 4o Mini (Build 2024-07-18)",
+      "max_input_tokens": 128000,
+      "context_label": "128K"
+    },
+    {
+      "id": 240,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o-mini-tts/text-to-audio",
+      "custom_model": "openai/gpt-4o-mini-tts/text-to-audio",
+      "model_name": "gpt-4o-mini-tts/text-to-audio",
+      "tags": [
+        "text-to-audio"
+      ],
+      "alias": "GPT 4o Mini TTS",
+      "max_input_tokens": 2000000
+    },
+    {
+      "id": 231,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-4o-transcribe/text-to-text",
+      "custom_model": "openai/gpt-4o-transcribe/text-to-text",
+      "model_name": "gpt-4o-transcribe/text-to-text",
+      "tags": [
+        "text-to-text",
+        "audio-to-text"
+      ],
+      "alias": "GPT 4o Transcribe"
+    },
+    {
+      "id": 341,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-chat/text-to-text",
+      "custom_model": "openai/gpt-5-chat/text-to-text",
+      "model_name": "gpt-5-chat/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "GPT 5 Chat"
+    },
+    {
+      "id": 326,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-codex/text-to-text",
+      "custom_model": "openai/gpt-5-codex/text-to-text",
+      "model_name": "gpt-5-codex/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "GPT 5 Codex"
+    },
+    {
+      "id": 261,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-mini/text-to-text",
+      "custom_model": "openai/gpt-5-mini/text-to-text",
+      "model_name": "gpt-5-mini/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search",
+        "image-to-text"
+      ],
+      "alias": "GPT 5 Mini",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 262,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-nano/text-to-text",
+      "custom_model": "openai/gpt-5-nano/text-to-text",
+      "model_name": "gpt-5-nano/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis",
+        "image-to-text"
+      ],
+      "alias": "GPT 5 Nano",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 273,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5-pro/text-to-text",
+      "custom_model": "openai/gpt-5-pro/text-to-text",
+      "model_name": "gpt-5-pro/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "GPT 5 Pro",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 438,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.1-codex-max/text-to-text",
+      "custom_model": "openai/gpt-5.1-codex-max/text-to-text",
+      "model_name": "gpt-5.1-codex-max/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "GPT 5.1 Codex Max",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 380,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.1-codex/text-to-text",
+      "custom_model": "openai/gpt-5.1-codex/text-to-text",
+      "model_name": "gpt-5.1-codex/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "GPT 5.1 Codex",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 365,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.1/text-to-text",
+      "custom_model": "openai/gpt-5.1/text-to-text",
+      "model_name": "gpt-5.1/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text"
+      ],
+      "alias": "GPT 5.1",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 410,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2-2025-12-11/text-to-text",
+      "custom_model": "openai/gpt-5.2-2025-12-11/text-to-text",
+      "model_name": "gpt-5.2-2025-12-11/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "GPT 5.2 (Build 2025-12-11)",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 409,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2-chat-latest/text-to-text",
+      "custom_model": "openai/gpt-5.2-chat-latest/text-to-text",
+      "model_name": "gpt-5.2-chat-latest/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.2 Chat Latest",
+      "max_input_tokens": 128000,
+      "context_label": "128K"
+    },
+    {
+      "id": 442,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2-codex/text-to-text",
+      "custom_model": "openai/gpt-5.2-codex/text-to-text",
+      "model_name": "gpt-5.2-codex/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.2 Codex",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 411,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2-pro-2025-12-11/text-to-text",
+      "custom_model": "openai/gpt-5.2-pro-2025-12-11/text-to-text",
+      "model_name": "gpt-5.2-pro-2025-12-11/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.2 Pro (Build 2025-12-11)",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 408,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.2-pro/text-to-text",
+      "custom_model": "openai/gpt-5.2-pro/text-to-text",
+      "model_name": "gpt-5.2-pro/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.2 Pro",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 492,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.3-codex/text-to-text",
+      "custom_model": "openai/gpt-5.3-codex/text-to-text",
+      "model_name": "gpt-5.3-codex/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.3 Codex",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 496,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5.4/text-to-text",
+      "custom_model": "openai/gpt-5.4/text-to-text",
+      "model_name": "gpt-5.4/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "GPT 5.4",
+      "max_input_tokens": 1050000,
+      "context_label": "1.05M"
+    },
+    {
+      "id": 260,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-5/text-to-text",
+      "custom_model": "openai/gpt-5/text-to-text",
+      "model_name": "gpt-5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search",
+        "image-to-text"
+      ],
+      "alias": "GPT 5",
+      "max_input_tokens": 400000,
+      "context_label": "400K"
+    },
+    {
+      "id": 362,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-image-1-mini/text-to-image",
+      "custom_model": "openai/gpt-image-1-mini/text-to-image",
+      "model_name": "gpt-image-1-mini/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "GPT Image 1 Mini"
+    },
+    {
+      "id": 413,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-image-1.5/text-to-image",
+      "custom_model": "openai/gpt-image-1.5/text-to-image",
+      "model_name": "gpt-image-1.5/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "GPT Image 1.5"
+    },
+    {
+      "id": 80,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-image-1/image-edit",
+      "custom_model": "openai/gpt-image-1/image-edit",
+      "model_name": "gpt-image-1/image-edit",
+      "tags": [
+        "image-edit",
+        "text-to-image"
+      ],
+      "alias": "GPT Image 1"
+    },
+    {
+      "id": 619,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-image-2.5-flare/text-to-image",
+      "custom_model": "openai/gpt-image-2.5-flare/text-to-image",
+      "model_name": "gpt-image-2.5-flare/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ]
+    },
+    {
+      "id": 620,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "gpt-image-2.5-sunburst/text-to-image",
+      "custom_model": "openai/gpt-image-2.5-sunburst/text-to-image",
+      "model_name": "gpt-image-2.5-sunburst/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ]
+    },
+    {
+      "id": 301,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-2-image/text-to-image",
+      "custom_model": "grok/grok-2-image/text-to-image",
+      "model_name": "grok-2-image/text-to-image",
+      "tags": [
+        "text-to-image"
+      ],
+      "alias": "Grok 2 Image"
+    },
+    {
+      "id": 205,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-3-reasoner-r/text-to-text",
+      "custom_model": "grok/grok-3-reasoner-r/text-to-text",
+      "model_name": "grok-3-reasoner-r/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Grok 3 Reasoner R"
+    },
+    {
+      "id": 146,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-3-reasoner/text-to-text",
+      "custom_model": "grok/grok-3-reasoner/text-to-text",
+      "model_name": "grok-3-reasoner/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Grok 3 Reasoner"
+    },
+    {
+      "id": 126,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-3/text-to-text",
+      "custom_model": "grok/grok-3/text-to-text",
+      "model_name": "grok-3/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Grok 3"
+    },
+    {
+      "id": 364,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-4-image/text-to-image",
+      "custom_model": "grok/grok-4-image/text-to-image",
+      "model_name": "grok-4-image/text-to-image",
+      "tags": [
+        "text-to-image"
+      ],
+      "alias": "Grok 4 Image"
+    },
+    {
+      "id": 423,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-code-fast-1/text-to-text",
+      "custom_model": "grok/grok-code-fast-1/text-to-text",
+      "model_name": "grok-code-fast-1/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Grok Code Fast 1"
+    },
+    {
+      "id": 385,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-imagine-0.9/text-to-image",
+      "custom_model": "grok/grok-imagine-0.9/text-to-image",
+      "model_name": "grok-imagine-0.9/text-to-image",
+      "tags": [
+        "text-to-image"
+      ],
+      "alias": "Grok Imagine 0.9"
+    },
+    {
+      "id": 448,
+      "provider": "grok",
+      "provider_name": "Grok",
+      "model": "grok-imagine-image/text-to-image",
+      "custom_model": "grok/grok-imagine-image/text-to-image",
+      "model_name": "grok-imagine-image/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Grok Imagine Image"
+    },
+    {
+      "id": 347,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "hailuo-02-fast/image-to-video",
+      "custom_model": "minimax/hailuo-02-fast/image-to-video",
+      "model_name": "hailuo-02-fast/image-to-video",
+      "tags": [
+        "image-to-video"
+      ],
+      "alias": "Hailuo 02 Fast"
+    },
+    {
+      "id": 348,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "hailuo-02-pro/text-to-video",
+      "custom_model": "minimax/hailuo-02-pro/text-to-video",
+      "model_name": "hailuo-02-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Hailuo 02 Pro"
+    },
+    {
+      "id": 349,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "hailuo-02-standard/text-to-video",
+      "custom_model": "minimax/hailuo-02-standard/text-to-video",
+      "model_name": "hailuo-02-standard/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Hailuo 02 Standard"
+    },
+    {
+      "id": 352,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "hailuo-2.3-fast/image-to-video",
+      "custom_model": "minimax/hailuo-2.3-fast/image-to-video",
+      "model_name": "hailuo-2.3-fast/image-to-video",
+      "tags": [
+        "image-to-video"
+      ],
+      "alias": "Hailuo 2.3 Fast"
+    },
+    {
+      "id": 351,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "hailuo-2.3-pro/image-to-video",
+      "custom_model": "minimax/hailuo-2.3-pro/image-to-video",
+      "model_name": "hailuo-2.3-pro/image-to-video",
+      "tags": [
+        "image-to-video",
+        "text-to-video"
+      ],
+      "alias": "Hailuo 2.3 Pro"
+    },
+    {
+      "id": 350,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "hailuo-2.3-standard/image-to-video",
+      "custom_model": "minimax/hailuo-2.3-standard/image-to-video",
+      "model_name": "hailuo-2.3-standard/image-to-video",
+      "tags": [
+        "image-to-video",
+        "text-to-video"
+      ],
+      "alias": "Hailuo 2.3 Standard"
+    },
+    {
+      "id": 258,
+      "provider": "higgsfield",
+      "provider_name": "Higgsfield",
+      "model": "higgsfield-lite/image-to-video",
+      "custom_model": "higgsfield/higgsfield-lite/image-to-video",
+      "model_name": "higgsfield-lite/image-to-video",
+      "tags": [
+        "image-to-video"
+      ],
+      "alias": "Higgsfield Lite"
+    },
+    {
+      "id": 257,
+      "provider": "higgsfield",
+      "provider_name": "Higgsfield",
+      "model": "higgsfield-standard/image-to-video",
+      "custom_model": "higgsfield/higgsfield-standard/image-to-video",
+      "model_name": "higgsfield-standard/image-to-video",
+      "tags": [
+        "image-to-video"
+      ],
+      "alias": "Higgsfield Standard"
+    },
+    {
+      "id": 259,
+      "provider": "higgsfield",
+      "provider_name": "Higgsfield",
+      "model": "higgsfield-turbo/image-to-video",
+      "custom_model": "higgsfield/higgsfield-turbo/image-to-video",
+      "model_name": "higgsfield-turbo/image-to-video",
+      "tags": [
+        "image-to-video"
+      ],
+      "alias": "Higgsfield Turbo"
+    },
+    {
+      "id": 618,
+      "provider": "hunyuan",
+      "provider_name": "Hunyuan",
+      "model": "hy4-preview/text-to-text",
+      "custom_model": "hunyuan/hy4-preview/text-to-text",
+      "model_name": "hy4-preview/text-to-text",
+      "tags": [
+        "text-to-text"
+      ]
+    },
+    {
+      "id": 153,
+      "provider": "ideogram",
+      "provider_name": "Ideogram",
+      "model": "ideogram-edit-v3/image-to-image",
+      "custom_model": "ideogram/ideogram-edit-v3/image-to-image",
+      "model_name": "ideogram-edit-v3/image-to-image",
+      "tags": [
+        "image-to-image"
+      ],
+      "alias": "Ideogram Edit v3"
+    },
+    {
+      "id": 135,
+      "provider": "ideogram",
+      "provider_name": "Ideogram",
+      "model": "ideogram-generate-v3/text-to-image",
+      "custom_model": "ideogram/ideogram-generate-v3/text-to-image",
+      "model_name": "ideogram-generate-v3/text-to-image",
+      "tags": [
+        "text-to-image"
+      ],
+      "alias": "Ideogram Generate v3"
+    },
+    {
+      "id": 154,
+      "provider": "ideogram",
+      "provider_name": "Ideogram",
+      "model": "ideogram-reframe-v3/image-to-image",
+      "custom_model": "ideogram/ideogram-reframe-v3/image-to-image",
+      "model_name": "ideogram-reframe-v3/image-to-image",
+      "tags": [
+        "image-to-image"
+      ],
+      "alias": "Ideogram Reframe v3"
+    },
+    {
+      "id": 152,
+      "provider": "ideogram",
+      "provider_name": "Ideogram",
+      "model": "ideogram-remix-v3/text-to-image",
+      "custom_model": "ideogram/ideogram-remix-v3/text-to-image",
+      "model_name": "ideogram-remix-v3/text-to-image",
+      "tags": [
+        "text-to-image"
+      ],
+      "alias": "Ideogram Remix v3"
+    },
+    {
+      "id": 151,
+      "provider": "ideogram",
+      "provider_name": "Ideogram",
+      "model": "ideogram-replace-background-v3/text-to-image",
+      "custom_model": "ideogram/ideogram-replace-background-v3/text-to-image",
+      "model_name": "ideogram-replace-background-v3/text-to-image",
+      "tags": [
+        "text-to-image"
+      ],
+      "alias": "Ideogram Replace Background v3"
+    },
+    {
+      "id": 321,
+      "provider": "gptproto",
+      "provider_name": "GPTProto",
+      "model": "image-background-remover/image-edit",
+      "custom_model": "gptproto/image-background-remover/image-edit",
+      "model_name": "image-background-remover/image-edit",
+      "tags": [
+        "image-edit"
+      ],
+      "alias": "Image Background Remover"
+    },
+    {
+      "id": 322,
+      "provider": "gptproto",
+      "provider_name": "GPTProto",
+      "model": "image-upscaler/image-edit",
+      "custom_model": "gptproto/image-upscaler/image-edit",
+      "model_name": "image-upscaler/image-edit",
+      "tags": [
+        "image-edit"
+      ],
+      "alias": "Image Upscaler"
+    },
+    {
+      "id": 324,
+      "provider": "gptproto",
+      "provider_name": "GPTProto",
+      "model": "image-watermark-remover/image-to-image",
+      "custom_model": "gptproto/image-watermark-remover/image-to-image",
+      "model_name": "image-watermark-remover/image-to-image",
+      "tags": [
+        "image-to-image"
+      ],
+      "alias": "Image Watermark Remover"
+    },
+    {
+      "id": 323,
+      "provider": "gptproto",
+      "provider_name": "GPTProto",
+      "model": "image-zoom/image-to-image",
+      "custom_model": "gptproto/image-zoom/image-to-image",
+      "model_name": "image-zoom/image-to-image",
+      "tags": [
+        "image-to-image"
+      ],
+      "alias": "Image Zoom"
+    },
+    {
+      "id": 469,
+      "provider": "moonshotai",
+      "provider_name": "MoonshotAI",
+      "model": "kimi-k2.5/text-to-text",
+      "custom_model": "moonshotai/kimi-k2.5/text-to-text",
+      "model_name": "kimi-k2.5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "Kimi K2.5",
+      "max_input_tokens": 262144,
+      "context_label": "262K"
+    },
+    {
+      "id": 437,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-image-o1/text-to-image",
+      "custom_model": "kling/kling-image-o1/text-to-image",
+      "model_name": "kling-image-o1/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-to-image"
+      ],
+      "alias": "Kling Image o1"
+    },
+    {
+      "id": 355,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v2.1-master/image-to-video",
+      "custom_model": "kling/kling-v2.1-master/image-to-video",
+      "model_name": "kling-v2.1-master/image-to-video",
+      "tags": [
+        "image-to-video",
+        "text-to-video"
+      ],
+      "alias": "Kling v2.1 Master"
+    },
+    {
+      "id": 354,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v2.1-pro/image-to-video",
+      "custom_model": "kling/kling-v2.1-pro/image-to-video",
+      "model_name": "kling-v2.1-pro/image-to-video",
+      "tags": [
+        "image-to-video",
+        "start-end-frame"
+      ],
+      "alias": "Kling v2.1 Pro"
+    },
+    {
+      "id": 353,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v2.1-standard/image-to-video",
+      "custom_model": "kling/kling-v2.1-standard/image-to-video",
+      "model_name": "kling-v2.1-standard/image-to-video",
+      "tags": [
+        "image-to-video"
+      ],
+      "alias": "Kling v2.1 Standard"
+    },
+    {
+      "id": 288,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v2.5-turbo-pro/image-to-video",
+      "custom_model": "kling/kling-v2.5-turbo-pro/image-to-video",
+      "model_name": "kling-v2.5-turbo-pro/image-to-video",
+      "tags": [
+        "image-to-video",
+        "text-to-video",
+        "start-end-frame"
+      ],
+      "alias": "Kling v2.5 Turbo Pro"
+    },
+    {
+      "id": 404,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v2.5-turbo-std/image-to-video",
+      "custom_model": "kling/kling-v2.5-turbo-std/image-to-video",
+      "model_name": "kling-v2.5-turbo-std/image-to-video",
+      "tags": [
+        "image-to-video",
+        "text-to-video"
+      ],
+      "alias": "Kling v2.5 Turbo Std"
+    },
+    {
+      "id": 433,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v2.6-pro/text-to-video",
+      "custom_model": "kling/kling-v2.6-pro/text-to-video",
+      "model_name": "kling-v2.6-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "motion-control"
+      ],
+      "alias": "Kling v2.6 Pro"
+    },
+    {
+      "id": 453,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v2.6-std/text-to-video",
+      "custom_model": "kling/kling-v2.6-std/text-to-video",
+      "model_name": "kling-v2.6-std/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "motion-control"
+      ],
+      "alias": "Kling v2.6 Std"
+    },
+    {
+      "id": 457,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v3.0-pro/text-to-video",
+      "custom_model": "kling/kling-v3.0-pro/text-to-video",
+      "model_name": "kling-v3.0-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "motion-control"
+      ],
+      "alias": "Kling v3.0 Pro"
+    },
+    {
+      "id": 456,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-v3.0-std/text-to-video",
+      "custom_model": "kling/kling-v3.0-std/text-to-video",
+      "model_name": "kling-v3.0-std/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "motion-control"
+      ],
+      "alias": "Kling v3.0 Std"
+    },
+    {
+      "id": 435,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-video-o1-pro/text-to-video",
+      "custom_model": "kling/kling-video-o1-pro/text-to-video",
+      "model_name": "kling-video-o1-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video",
+        "video-to-video"
+      ],
+      "alias": "Kling Video o1 Pro"
+    },
+    {
+      "id": 434,
+      "provider": "kling",
+      "provider_name": "Kling",
+      "model": "kling-video-o1-std/text-to-video",
+      "custom_model": "kling/kling-video-o1-std/text-to-video",
+      "model_name": "kling-video-o1-std/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "video-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Kling Video o1 Std"
+    },
+    {
+      "id": 489,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "MiniMax-M2.5/text-to-text",
+      "custom_model": "minimax/MiniMax-M2.5/text-to-text",
+      "model_name": "MiniMax-M2.5/text-to-text",
+      "tags": [
+        "text-to-text",
+        "web-search",
+        "file-analysis"
+      ],
+      "alias": "MiniMax M2.5",
+      "max_input_tokens": 204800,
+      "context_label": "205K"
+    },
+    {
+      "id": 494,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o3-mini/text-to-text",
+      "custom_model": "openai/o3-mini/text-to-text",
+      "model_name": "o3-mini/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "o3 Mini",
+      "max_input_tokens": 200000,
+      "context_label": "200K"
+    },
+    {
+      "id": 138,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o3/text-to-text",
+      "custom_model": "openai/o3/text-to-text",
+      "model_name": "o3/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "o3",
+      "max_input_tokens": 200000,
+      "context_label": "200K"
+    },
+    {
+      "id": 139,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "o4-mini/text-to-text",
+      "custom_model": "openai/o4-mini/text-to-text",
+      "model_name": "o4-mini/text-to-text",
+      "tags": [
+        "text-to-text",
+        "image-to-text",
+        "file-analysis",
+        "web-search"
+      ],
+      "alias": "o4 Mini",
+      "max_input_tokens": 200000,
+      "context_label": "200K"
+    },
+    {
+      "id": 371,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen-image-lora/image-edit",
+      "custom_model": "alibaba/qwen-image-lora/image-edit",
+      "model_name": "qwen-image-lora/image-edit",
+      "tags": [
+        "image-edit"
+      ],
+      "alias": "Qwen Image LoRA"
+    },
+    {
+      "id": 370,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen-image-plus-lora/image-edit",
+      "custom_model": "alibaba/qwen-image-plus-lora/image-edit",
+      "model_name": "qwen-image-plus-lora/image-edit",
+      "tags": [
+        "image-edit"
+      ],
+      "alias": "Qwen Image Plus LoRA"
+    },
+    {
+      "id": 369,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen-image-plus/image-edit",
+      "custom_model": "alibaba/qwen-image-plus/image-edit",
+      "model_name": "qwen-image-plus/image-edit",
+      "tags": [
+        "image-edit"
+      ],
+      "alias": "Qwen Image Plus"
+    },
+    {
+      "id": 266,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen-image/text-to-image",
+      "custom_model": "alibaba/qwen-image/text-to-image",
+      "model_name": "qwen-image/text-to-image",
+      "tags": [
+        "text-to-image"
+      ],
+      "alias": "Qwen Image"
+    },
+    {
+      "id": 444,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen-plus/text-to-text",
+      "custom_model": "alibaba/qwen-plus/text-to-text",
+      "model_name": "qwen-plus/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Qwen Plus",
+      "max_input_tokens": 1000000,
+      "context_label": "1M"
+    },
+    {
+      "id": 446,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen-turbo/text-to-text",
+      "custom_model": "alibaba/qwen-turbo/text-to-text",
+      "model_name": "qwen-turbo/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Qwen Turbo"
+    },
+    {
+      "id": 443,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "qwen3-max/text-to-text",
+      "custom_model": "alibaba/qwen3-max/text-to-text",
+      "model_name": "qwen3-max/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Qwen3 Max",
+      "max_input_tokens": 262144,
+      "context_label": "262K"
+    },
+    {
+      "id": 302,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "seedance-1-0-pro-250528/text-to-video",
+      "custom_model": "doubao/seedance-1-0-pro-250528/text-to-video",
+      "model_name": "seedance-1-0-pro-250528/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Seedance 1.0 Pro (Build 250528)"
+    },
+    {
+      "id": 290,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "seedream-4-0-250828/text-to-image",
+      "custom_model": "doubao/seedream-4-0-250828/text-to-image",
+      "model_name": "seedream-4-0-250828/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Seedream 4.0 (Build 250828)"
+    },
+    {
+      "id": 403,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "seedream-4-5-251128/text-to-image",
+      "custom_model": "doubao/seedream-4-5-251128/text-to-image",
+      "model_name": "seedream-4-5-251128/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Seedream 4.5 (Build 251128)"
+    },
+    {
+      "id": 486,
+      "provider": "doubao",
+      "provider_name": "Bytedance",
+      "model": "seedream-5-0-260128/text-to-image",
+      "custom_model": "doubao/seedream-5-0-260128/text-to-image",
+      "model_name": "seedream-5-0-260128/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit"
+      ],
+      "alias": "Seedream 5.0 (Build 260128)"
+    },
+    {
+      "id": 300,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "sora-2-pro/text-to-video",
+      "custom_model": "openai/sora-2-pro/text-to-video",
+      "model_name": "sora-2-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Sora 2 Pro"
+    },
+    {
+      "id": 297,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "sora-2/text-to-video",
+      "custom_model": "openai/sora-2/text-to-video",
+      "model_name": "sora-2/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Sora 2"
+    },
+    {
+      "id": 283,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "speech-02-hd/text-to-audio",
+      "custom_model": "minimax/speech-02-hd/text-to-audio",
+      "model_name": "speech-02-hd/text-to-audio",
+      "tags": [
+        "text-to-audio"
+      ],
+      "alias": "Speech 02 HD"
+    },
+    {
+      "id": 285,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "speech-02-turbo/text-to-audio",
+      "custom_model": "minimax/speech-02-turbo/text-to-audio",
+      "model_name": "speech-02-turbo/text-to-audio",
+      "tags": [
+        "text-to-audio"
+      ],
+      "alias": "Speech 02 Turbo"
+    },
+    {
+      "id": 281,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "speech-2.5-hd-preview-voice-clone/text-to-audio",
+      "custom_model": "minimax/speech-2.5-hd-preview-voice-clone/text-to-audio",
+      "model_name": "speech-2.5-hd-preview-voice-clone/text-to-audio",
+      "tags": [
+        "text-to-audio",
+        "voice-clone"
+      ],
+      "alias": "Speech 2.5 HD Preview Voice Clone"
+    },
+    {
+      "id": 277,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "speech-2.5-hd-preview/text-to-audio",
+      "custom_model": "minimax/speech-2.5-hd-preview/text-to-audio",
+      "model_name": "speech-2.5-hd-preview/text-to-audio",
+      "tags": [
+        "text-to-audio"
+      ],
+      "alias": "Speech 2.5 HD Preview"
+    },
+    {
+      "id": 286,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "speech-2.5-turbo-preview-voice-clone/text-to-audio",
+      "custom_model": "minimax/speech-2.5-turbo-preview-voice-clone/text-to-audio",
+      "model_name": "speech-2.5-turbo-preview-voice-clone/text-to-audio",
+      "tags": [
+        "text-to-audio",
+        "voice-clone"
+      ],
+      "alias": "Speech 2.5 Turbo Preview Voice Clone"
+    },
+    {
+      "id": 287,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "speech-2.5-turbo-preview/text-to-audio",
+      "custom_model": "minimax/speech-2.5-turbo-preview/text-to-audio",
+      "model_name": "speech-2.5-turbo-preview/text-to-audio",
+      "tags": [
+        "text-to-audio"
+      ],
+      "alias": "Speech 2.5 Turbo Preview"
+    },
+    {
+      "id": 421,
+      "provider": "minimax",
+      "provider_name": "MiniMax",
+      "model": "speech-2.6-hd/text-to-audio",
+      "custom_model": "minimax/speech-2.6-hd/text-to-audio",
+      "model_name": "speech-2.6-hd/text-to-audio",
+      "tags": [
+        "text-to-audio"
+      ],
+      "alias": "Speech 2.6 HD"
+    },
+    {
+      "id": 344,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "text-embedding-3-large/text-to-text",
+      "custom_model": "openai/text-embedding-3-large/text-to-text",
+      "model_name": "text-embedding-3-large/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Text Embedding 3 Large"
+    },
+    {
+      "id": 345,
+      "provider": "openai",
+      "provider_name": "OpenAI",
+      "model": "text-embedding-3-small/text-to-text",
+      "custom_model": "openai/text-embedding-3-small/text-to-text",
+      "model_name": "text-embedding-3-small/text-to-text",
+      "tags": [
+        "text-to-text"
+      ],
+      "alias": "Text Embedding 3 Small"
+    },
+    {
+      "id": 325,
+      "provider": "tripo3d",
+      "provider_name": "Tripo3d",
+      "model": "tripo3d-v2.5/image-to-3d",
+      "custom_model": "tripo3d/tripo3d-v2.5/image-to-3d",
+      "model_name": "tripo3d-v2.5/image-to-3d",
+      "tags": [
+        "image-to-3d"
+      ],
+      "alias": "Tripo3D v2.5"
+    },
+    {
+      "id": 375,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "veo-3.1-fast-generate-preview/text-to-video",
+      "custom_model": "google/veo-3.1-fast-generate-preview/text-to-video",
+      "model_name": "veo-3.1-fast-generate-preview/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "video-to-video"
+      ],
+      "alias": "Veo 3.1 Fast Generate Preview"
+    },
+    {
+      "id": 372,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "veo-3.1-generate-preview/text-to-video",
+      "custom_model": "google/veo-3.1-generate-preview/text-to-video",
+      "model_name": "veo-3.1-generate-preview/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "video-to-video"
+      ],
+      "alias": "Veo 3.1 Generate Preview"
+    },
+    {
+      "id": 218,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "veo3-fast/text-to-video",
+      "custom_model": "google/veo3-fast/text-to-video",
+      "model_name": "veo3-fast/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Veo 3 Fast"
+    },
+    {
+      "id": 219,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "veo3-pro/text-to-video",
+      "custom_model": "google/veo3-pro/text-to-video",
+      "model_name": "veo3-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Veo 3 Pro"
+    },
+    {
+      "id": 308,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "veo3.1-fast/text-to-video",
+      "custom_model": "google/veo3.1-fast/text-to-video",
+      "model_name": "veo3.1-fast/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Veo 3.1 Fast"
+    },
+    {
+      "id": 310,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "veo3.1-pro/text-to-video",
+      "custom_model": "google/veo3.1-pro/text-to-video",
+      "model_name": "veo3.1-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Veo 3.1 Pro"
+    },
+    {
+      "id": 312,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "veo3.1/image-to-video",
+      "custom_model": "google/veo3.1/image-to-video",
+      "model_name": "veo3.1/image-to-video",
+      "tags": [
+        "image-to-video",
+        "text-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Veo 3.1"
+    },
+    {
+      "id": 217,
+      "provider": "google",
+      "provider_name": "Google",
+      "model": "veo3/text-to-video",
+      "custom_model": "google/veo3/text-to-video",
+      "model_name": "veo3/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Veo 3"
+    },
+    {
+      "id": 412,
+      "provider": "gptproto",
+      "provider_name": "GPTProto",
+      "model": "video-watermark-remover/video-to-video",
+      "custom_model": "gptproto/video-watermark-remover/video-to-video",
+      "model_name": "video-watermark-remover/video-to-video",
+      "tags": [
+        "video-to-video"
+      ],
+      "alias": "Video Watermark Remover"
+    },
+    {
+      "id": 450,
+      "provider": "vidu",
+      "provider_name": "Vidu",
+      "model": "viduq2-pro-fast/image-to-video",
+      "custom_model": "vidu/viduq2-pro-fast/image-to-video",
+      "model_name": "viduq2-pro-fast/image-to-video",
+      "tags": [
+        "image-to-video",
+        "start-end-frame"
+      ],
+      "alias": "Vidu Q2 Pro Fast"
+    },
+    {
+      "id": 452,
+      "provider": "vidu",
+      "provider_name": "Vidu",
+      "model": "viduq2-pro/image-to-video",
+      "custom_model": "vidu/viduq2-pro/image-to-video",
+      "model_name": "viduq2-pro/image-to-video",
+      "tags": [
+        "image-to-video",
+        "start-end-frame"
+      ],
+      "alias": "Vidu Q2 Pro"
+    },
+    {
+      "id": 451,
+      "provider": "vidu",
+      "provider_name": "Vidu",
+      "model": "viduq2-turbo/image-to-video",
+      "custom_model": "vidu/viduq2-turbo/image-to-video",
+      "model_name": "viduq2-turbo/image-to-video",
+      "tags": [
+        "image-to-video",
+        "start-end-frame"
+      ],
+      "alias": "Vidu Q2 Turbo"
+    },
+    {
+      "id": 449,
+      "provider": "vidu",
+      "provider_name": "Vidu",
+      "model": "viduq2/text-to-image",
+      "custom_model": "vidu/viduq2/text-to-image",
+      "model_name": "viduq2/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-to-image",
+        "text-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Vidu Q2"
+    },
+    {
+      "id": 454,
+      "provider": "vidu",
+      "provider_name": "Vidu",
+      "model": "viduq3-pro/text-to-video",
+      "custom_model": "vidu/viduq3-pro/text-to-video",
+      "model_name": "viduq3-pro/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "start-end-frame"
+      ],
+      "alias": "Vidu Q3 Pro"
+    },
+    {
+      "id": 497,
+      "provider": "vidu",
+      "provider_name": "Vidu",
+      "model": "viduq3-turbo/text-to-video",
+      "custom_model": "vidu/viduq3-turbo/text-to-video",
+      "model_name": "viduq3-turbo/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "start-end-frame"
+      ],
+      "alias": "Vidu Q3 Turbo"
+    },
+    {
+      "id": 346,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "wan-2.2-plus/text-to-video",
+      "custom_model": "alibaba/wan-2.2-plus/text-to-video",
+      "model_name": "wan-2.2-plus/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Wan 2.2 Plus"
+    },
+    {
+      "id": 289,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "wan-2.5/text-to-image",
+      "custom_model": "alibaba/wan-2.5/text-to-image",
+      "model_name": "wan-2.5/text-to-image",
+      "tags": [
+        "text-to-image",
+        "image-edit",
+        "text-to-video",
+        "image-to-video"
+      ],
+      "alias": "Wan 2.5"
+    },
+    {
+      "id": 419,
+      "provider": "alibaba",
+      "provider_name": "Qwen",
+      "model": "wan-2.6/text-to-video",
+      "custom_model": "alibaba/wan-2.6/text-to-video",
+      "model_name": "wan-2.6/text-to-video",
+      "tags": [
+        "text-to-video",
+        "image-to-video",
+        "reference-to-video"
+      ],
+      "alias": "Wan 2.6"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "@gptproto-ai/cli",
+  "version": "0.4.0",
+  "description": "Command-line client for documented GPTProto APIs.",
+  "license": "MIT",
+  "keywords": [
+    "gptproto",
+    "ai",
+    "cli",
+    "llm",
+    "image-generation",
+    "video-generation",
+    "audio-generation"
+  ],
+  "homepage": "https://github.com/gptproto-ai/gptproto-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gptproto-ai/gptproto-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gptproto-ai/gptproto-cli/issues"
+  },
+  "type": "module",
+  "bin": {
+    "gptproto": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "CONTRACT.md",
+    "SUPPORTED_APIS.md",
+    "README.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "npm run build && node test/smoke.mjs && node test/route-contract.mjs",
+    "test:routes": "npm run build && node test/route-contract.mjs",
+    "start": "node dist/index.js"
+  },
+  "engines": {
+    "node": ">=18.18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}

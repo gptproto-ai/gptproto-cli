@@ -1,0 +1,10 @@
+{
+  "model": "example-model",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Say hello in one sentence."
+    }
+  ],
+  "stream": false
+}
