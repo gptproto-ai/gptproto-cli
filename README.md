@@ -14,6 +14,22 @@ gptproto config
 
 The CLI uses a GPTProto API key. Browser sign-in is not required.
 
+To check the installed version and npm releases, or install a published release:
+
+```bash
+gptproto --version          # installed version, no network request
+gptproto version            # installed, npm latest, and newer versions
+gptproto version --json     # same information for automation
+gptproto update             # install npm's latest release globally
+gptproto update 0.5.0       # install a specific published version
+```
+
+`gptproto update` uses the official npm registry. Until this package is published,
+`gptproto version` reports that no npm release exists and `gptproto update`
+does not change the local installation. A CLI installed with `npm link` can
+instead be refreshed from its GitHub checkout with `git pull`, `npm ci`, and
+`npm run build`.
+
 Set a different GPTProto server only when needed:
 
 ```bash

@@ -27,6 +27,13 @@ import {
   getApiDefinition,
   type ApiDefinition,
 } from "./definitions.js";
+import {
+  CURRENT_VERSION,
+  NPM_PACKAGE_NAME,
+  compareVersions,
+  fetchNpmVersionInfo,
+  installNpmVersion,
+} from "./version.js";
 
 const TERMINAL_STATUSES = new Set([
   "completed",
@@ -49,12 +56,14 @@ const CUSTOM_CREATE_PATHS: Readonly<Record<string, string>> = {
   "image-edit": "/api/v3/images/edit",
 };
 
-const HELP = `gptproto ${CLI_CONTRACT_VERSION}
+const HELP = `gptproto ${CURRENT_VERSION}
 
 Usage:
   gptproto config [--base-url URL]
   gptproto key set --key KEY
   gptproto key remove
+  gptproto version [--json]
+  gptproto update [VERSION]
   gptproto models list [--capability NAME] [--json]
   gptproto model <provider/model> [--json]
   gptproto request <METHOD> <PATH> [--json JSON | --body FILE] [options]
@@ -1140,11 +1149,74 @@ function configCommand(): void {
   print({
     api_base_url: config.baseUrl,
     api_key_configured: Boolean(config.apiKey),
+    cli_version: CURRENT_VERSION,
     contract_version: config.contractVersion,
     timeout_ms: config.timeoutMs,
     poll_interval_ms: config.pollIntervalMs,
     max_poll_ms: config.maxPollMs,
   });
+}
+
+async function versionCommand(args: ParsedArgs): Promise<void> {
+  let info;
+  try {
+    info = await fetchNpmVersionInfo();
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (hasFlag(args, "json")) {
+      print({ current: CURRENT_VERSION, latest: null, newer: [], npm_error: message });
+    } else {
+      process.stdout.write(`Current: ${CURRENT_VERSION}\n`);
+      process.stderr.write(`Could not check npm: ${message}\n`);
+    }
+    process.exitCode = 1;
+    return;
+  }
+  if (hasFlag(args, "json")) {
+    print({
+      current: info.current,
+      latest: info.latest,
+      newer: info.newer,
+      published: info.published,
+    });
+    return;
+  }
+  process.stdout.write(`Current: ${info.current}\n`);
+  if (!info.published) {
+    process.stdout.write(`${NPM_PACKAGE_NAME} is not published on npm yet.\n`);
+    return;
+  }
+  process.stdout.write(`Latest on npm: ${info.latest ?? "not tagged"}\n`);
+  process.stdout.write(`Newer versions: ${info.newer.join(", ") || "none"}\n`);
+}
+
+async function updateCommand(args: ParsedArgs): Promise<void> {
+  if (args.positionals.length > 1) {
+    commandError("Usage: gptproto update [VERSION]");
+  }
+  const requested = args.positionals[0] ?? "latest";
+  const info = await fetchNpmVersionInfo();
+  if (!info.published) {
+    commandError(`${NPM_PACKAGE_NAME} has not been published on npm yet`);
+  }
+  const target = requested === "latest" ? info.latest : requested;
+  if (!target) {
+    commandError("No npm latest version is tagged; specify a published version");
+  }
+  if (!info.publishedVersions.includes(target)) {
+    commandError(`Version ${target} is not published for ${NPM_PACKAGE_NAME}`);
+  }
+  if (target === CURRENT_VERSION) {
+    process.stdout.write(`Already installed: ${CURRENT_VERSION}\n`);
+    return;
+  }
+  if (requested === "latest" && compareVersions(target, CURRENT_VERSION) < 0) {
+    process.stdout.write(`Current ${CURRENT_VERSION} is newer than npm latest ${target}.\n`);
+    return;
+  }
+  process.stdout.write(`Installing ${NPM_PACKAGE_NAME}@${target}...\n`);
+  await installNpmVersion(target);
+  process.stdout.write(`Installed ${target}. Run gptproto --version to verify.\n`);
 }
 
 async function run(argv: readonly string[]): Promise<void> {
@@ -1155,10 +1227,9 @@ async function run(argv: readonly string[]): Promise<void> {
   }
   if (
     hasFlag(args, "version", "V") ||
-    args.positionals[0] === "--version" ||
-    args.positionals[0] === "version"
+    args.positionals[0] === "--version"
   ) {
-    process.stdout.write(`${CLI_CONTRACT_VERSION}\n`);
+    process.stdout.write(`${CURRENT_VERSION}\n`);
     return;
   }
 
@@ -1180,6 +1251,8 @@ async function run(argv: readonly string[]): Promise<void> {
     return;
   }
   if (command === "key") { await keyCommand(commandArgs); return; }
+  if (command === "version") { await versionCommand(commandArgs); return; }
+  if (command === "update") { await updateCommand(commandArgs); return; }
   if (command === "models") {
     const subcommand = commandArgs.positionals[0] ?? "list";
     if (subcommand === "list") {
