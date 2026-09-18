@@ -21,7 +21,7 @@ gptproto --version          # installed version, no network request
 gptproto version            # installed, npm latest, and newer versions
 gptproto version --json     # same information for automation
 gptproto update             # install npm's latest release globally
-gptproto update 0.5.0       # install a specific published version
+gptproto update 1.0.0       # install a specific published version
 ```
 
 `gptproto update` uses the official npm registry. Until this package is published,

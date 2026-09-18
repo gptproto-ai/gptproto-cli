@@ -1,6 +1,6 @@
 {
   "name": "@gptproto-ai/cli",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Command-line client for documented GPTProto APIs.",
   "license": "MIT",
   "keywords": [
