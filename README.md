@@ -21,14 +21,12 @@ gptproto --version          # installed version, no network request
 gptproto version            # installed, npm latest, and newer versions
 gptproto version --json     # same information for automation
 gptproto update             # install npm's latest release globally
-gptproto update 1.0.0       # install a specific published version
+gptproto update 1.1.0       # install a specific published version
 ```
 
-`gptproto update` uses the official npm registry. Until this package is published,
-`gptproto version` reports that no npm release exists and `gptproto update`
-does not change the local installation. A CLI installed with `npm link` can
-instead be refreshed from its GitHub checkout with `git pull`, `npm ci`, and
-`npm run build`.
+`gptproto update` uses the official npm registry. A CLI installed with
+`npm link` can instead be refreshed from its GitHub checkout with `git pull`,
+`npm ci`, and `npm run build`.
 
 Set a different GPTProto server only when needed:
 
@@ -47,6 +45,39 @@ gptproto model openai/gpt-4.1 --json
 `gptproto model` is the entry point. Its normal output is readable: method, path, native model value, request type, parameters, streaming support, asynchronous polling, and response type. `--json` returns the same live descriptor for automation or an AI Skill.
 
 For an official-compatible route, pass the catalog model ID (`provider/model`) in the JSON or multipart `model` field. The CLI sends the native value without the provider prefix: `openai/gpt-4.1` becomes `gpt-4.1`. GPTProto custom routes retain the complete `provider/model` value.
+
+## Query live pricing
+
+Pricing is read from GPTProto's public model catalog at request time, so price
+changes and newly listed models do not require a CLI update. Pricing queries do
+not require an API key.
+
+```bash
+# All priced models
+gptproto pricing list
+
+# One exact provider/model
+gptproto pricing openai/gpt-4.1
+gptproto pricing openai/gpt-4.1 --json
+
+# Cheapest image or video listings
+gptproto pricing list --capability image --mode text-to-image --sort price --limit 10
+gptproto pricing list --capability video --mode text-to-video --cheapest 5 --json
+
+# Capability shorthand
+gptproto pricing images --mode text-to-image --cheapest 10
+
+# Search aliases, model IDs, and tags
+gptproto pricing list --search seedance --json
+```
+
+Broad capabilities include every operation in that media family. Use `--mode`
+with a catalog tag such as `text-to-image`, `image-to-video`, `image-edit`, or
+`audio-to-text` when the operation matters.
+
+For token-billed models, price sorting uses the input price. For fixed-price
+models it uses the per-generation price. The command displays the sorting basis
+and every available rate; it does not estimate a complete request's final cost.
 
 ## Execute documented APIs
 

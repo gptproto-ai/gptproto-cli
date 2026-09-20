@@ -34,6 +34,12 @@ import {
   fetchNpmVersionInfo,
   installNpmVersion,
 } from "./version.js";
+import {
+  queryPrices,
+  type ModelPrice,
+  type PriceSort,
+} from "./pricing.js";
+import { extractApiResult } from "./results.js";
 
 const TERMINAL_STATUSES = new Set([
   "completed",
@@ -66,12 +72,16 @@ Usage:
   gptproto update [VERSION]
   gptproto models list [--capability NAME] [--json]
   gptproto model <provider/model> [--json]
+  gptproto pricing list [--capability NAME] [--mode TAG] [--search TEXT] [--sort price|name] [--limit N] [--json]
+  gptproto pricing <text|image|images|video|videos|audio> [options]
+  gptproto pricing <provider/model> [--json]
   gptproto request <METHOD> <PATH> [--json JSON | --body FILE] [options]
   gptproto custom create <resource> [--json JSON | options] [--wait]
   gptproto task get <TASK_ID> [--video]
   gptproto task wait <TASK_ID> [--video]
 
 GPTProto provides the live model catalog and each model's interface parameters.
+Pricing is read live from GPTProto's public model catalog and does not require an API key.
 
 Examples:
   gptproto request POST /v1/responses --json '{"model":"openai/gpt-4.1","input":"Hello"}'
@@ -80,6 +90,9 @@ Examples:
   gptproto request POST /v1/audio/transcriptions --form model=openai/whisper-1 --file file=audio.mp3
   gptproto custom create video --json '{"model":"provider/model","prompt":"A short scene"}' --wait
   gptproto custom create video --json '{"model":"provider/model","prompt":"Animate this image","frame_images":[{"type":"image_url","image_url":{"url":"https://example.com/first.png"},"frame_type":"first_frame"}]}' --wait
+  gptproto pricing openai/gpt-4.1
+  gptproto pricing image --mode text-to-image --cheapest 10
+  gptproto pricing list --capability image --sort price --limit 10
 
 Runtime:
   GPTPROTO_API_BASE_URL       Optional override (default: https://gptproto.com)
@@ -124,6 +137,75 @@ async function dynamicModelCommand(args: ParsedArgs): Promise<void> {
     return;
   }
   printModelDescriptor(response.body);
+}
+
+function priceLine(item: ModelPrice): string {
+  const rates = [
+    item.pricing.fixed ? `fixed $${item.pricing.fixed}` : "",
+    item.pricing.input ? `input $${item.pricing.input}` : "",
+    item.pricing.output ? `output $${item.pricing.output}` : "",
+    item.pricing.cache_write ? `cache-write $${item.pricing.cache_write}` : "",
+    item.pricing.cache_read ? `cache-read $${item.pricing.cache_read}` : "",
+  ].filter(Boolean).join(", ");
+  return `${item.id}\t${item.capability}\t${rates} / ${item.pricing.billing_unit}${item.alias ? `\t${item.alias}` : ""}`;
+}
+
+function printSinglePrice(item: ModelPrice): void {
+  process.stdout.write(`Model: ${item.id}\n`);
+  if (item.alias) process.stdout.write(`Name: ${item.alias}\n`);
+  process.stdout.write(`Capability: ${item.capability}\n`);
+  process.stdout.write(`Billing unit: ${item.pricing.billing_unit}\n`);
+  if (item.pricing.fixed) process.stdout.write(`Fixed: $${item.pricing.fixed}\n`);
+  if (item.pricing.input) process.stdout.write(`Input: $${item.pricing.input}\n`);
+  if (item.pricing.output) process.stdout.write(`Output: $${item.pricing.output}\n`);
+  if (item.pricing.cache_write) process.stdout.write(`Cache write: $${item.pricing.cache_write}\n`);
+  if (item.pricing.cache_read) process.stdout.write(`Cache read: $${item.pricing.cache_read}\n`);
+  process.stdout.write(`Tags: ${item.tags.join(", ") || "none"}\n`);
+}
+
+async function pricingCommand(args: ParsedArgs): Promise<void> {
+  const first = args.positionals[0];
+  const capabilityNames = new Set(["text", "image", "images", "video", "videos", "audio", "audios", "3d", "other"]);
+  const positionalCapability = first && capabilityNames.has(first.toLowerCase()) ? first : undefined;
+  const list = !first || first === "list" || positionalCapability !== undefined;
+  const model = list ? undefined : first;
+  if (model && !model.includes("/")) {
+    commandError("Usage: gptproto pricing <provider/model>\n       gptproto pricing list [options]");
+  }
+  const limitValue = option(args, "limit") ?? option(args, "cheapest");
+  const limit = limitValue !== undefined ? Number(limitValue) : hasFlag(args, "cheapest") ? 10 : undefined;
+  const sortValue = option(args, "sort") ?? (option(args, "cheapest") !== undefined || hasFlag(args, "cheapest") ? "price" : "catalog");
+  if (!["catalog", "name", "price"].includes(sortValue)) {
+    commandError("--sort must be catalog, name, or price");
+  }
+  const config = getConfig(false);
+  const result = await queryPrices(config, {
+    model,
+    capability: option(args, "capability") ?? positionalCapability,
+    mode: option(args, "mode", "tag"),
+    search: option(args, "search"),
+    sort: sortValue as PriceSort,
+    limit,
+    language: option(args, "language"),
+  });
+  if (model && result.models.length === 0) {
+    commandError(`No price was found for ${model}`);
+  }
+  if (hasFlag(args, "json")) {
+    print(model ? result.models[0] : result);
+    return;
+  }
+  for (const warning of result.warnings ?? []) process.stderr.write(`Warning: ${warning}\n`);
+  if (model) {
+    printSinglePrice(result.models[0]);
+    return;
+  }
+  if (result.models.length === 0) {
+    process.stdout.write("No priced models matched the filters.\n");
+    return;
+  }
+  process.stdout.write("MODEL\tCAPABILITY\tPRICE\tNAME\n");
+  for (const item of result.models) process.stdout.write(`${priceLine(item)}\n`);
 }
 
 type JsonRecord = Record<string, unknown>;
@@ -410,35 +492,17 @@ function extractMediaResult(value: unknown): string[] {
 }
 
 function printExtractedResult(value: unknown, definition?: ApiDefinition): void {
-  const error = extractErrorMessage(value);
-  const id = definition?.id;
-  const textResponse = new Set([
-    "OPENAI-002", "OPENAI-003", "OPENAI-007", "OPENAI-008", "OPENAI-009",
-    "CLAUDE-001", "GOOGLE-001", "GOOGLE-002", "GOOGLE-003",
-  ]);
-  const mediaResponse = new Set([
-    "CUST-001", "CUST-004", "CUST-005", "CUST-006", "CUST-007", "CUST-008", "CUST-009",
-    "OPENAI-004", "OPENAI-005", "VEO-001", "VIDU-001", "KLING-001", "KLING-002",
-    "KLING-003", "KLING-004", "RUNWAY-001", "RUNWAY-002", "RUNWAY-003", "RUNWAY-004",
-    "RUNWAY-005", "SORA-001", "SORA-003", "WAN-001", "WAN-002",
-  ]);
-
-  if (textResponse.has(id ?? "")) {
-    const text = extractTextResult(value);
-    if (text !== undefined) {
-      print(text);
-      return;
-    }
+  const extracted = extractApiResult(value, definition);
+  if (extracted.type === "text") {
+    print(extracted.text ?? "");
+    return;
   }
-  if (mediaResponse.has(id ?? "")) {
-    const urls = extractMediaResult(value);
-    if (urls.length) {
-      process.stdout.write(`${urls.join("\n")}\n`);
-      return;
-    }
+  if (extracted.type === "media") {
+    process.stdout.write(`${(extracted.urls ?? []).join("\n")}\n`);
+    return;
   }
-  if (error) commandError(error);
-  print(value);
+  if (extracted.type === "error") commandError(extracted.error ?? "API request failed");
+  print(extracted.value);
 }
 
 function responseProfile(definition: ApiDefinition): Record<string, unknown> {
@@ -1267,6 +1331,10 @@ async function run(argv: readonly string[]): Promise<void> {
   }
   if (command === "model") {
     await dynamicModelCommand(commandArgs);
+    return;
+  }
+  if (command === "pricing" || command === "price") {
+    await pricingCommand(commandArgs);
     return;
   }
   if (command === "custom" || command === "unified") {
